@@ -1,0 +1,20 @@
+{
+  "name": "parikh_k_chatapp",
+  "version": "1.0.0",
+  "description": "social media chat app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevalparikh/parikh_k_chatApp.git"
+  },
+  "author": "keval parikh",
+  "license": "ISC",
+  "homepage": "https://github.com/kevalparikh/parikh_k_chatApp#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0"
+  }
+}
