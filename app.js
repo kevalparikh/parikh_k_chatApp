@@ -20,6 +20,7 @@ const server = app.listen(port, () =>{
 })
 
 // plug in the chat app package
+
 // switch for operator, listen incoming connection
 io.attach(server);
 
@@ -28,7 +29,6 @@ io.on('connection', function(socket){
     socket.emit('connected', {sID: `${socket.id}`, message: 'new connection'});
     
     //listen for incoming messages and send them to everyone
-    
     socket.on('chat message', function(msg){
         // check the message contents
         console.log('message', msg, 'socket', socket.id);
