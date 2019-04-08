@@ -15,7 +15,7 @@ This is a realtime chat application, Which is made by using Html, css, javascrip
 Node js, Vue js and Boostrap 4
 
 
-###My completed requirements for this project :
+### My completed requirements for this project :
 
 * added new skin color and new fonts to the chat design.
 * added new functionalities like it shows in numbers that how many users online.
