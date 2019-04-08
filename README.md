@@ -8,6 +8,8 @@ ChatApp Project by Keval parikh
 - run localhost:3000 on browser
 
 
+
+
 * my completed requirements for this project
 - added new skin color and new fonts to the chat design.
 - added new functionalities like it shows in numbers that how many users online.
