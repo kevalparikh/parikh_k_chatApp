@@ -1,11 +1,12 @@
 .new-message { 
     span { font-size: 0.8rem; display: block; margin-bottom: 2px; }
 
-    width: 45%;
+    width: 30%;
     padding: 8px 12px;
-    background-color: white; 
+    background-color:burlywood; 
     border-radius: 8px;
     margin-bottom: 1rem;
+    font-family: 'Courgette', cursive;
 
     float:left;
     clear: both;
@@ -13,6 +14,8 @@
 
 .my-message {
     float: right !important;
-    background-color: #86bf9d;
-    color: white;
+    background-color: rgb(238, 232, 170);
+    color: black;
+    font-family: 'Courgette', cursive;
+
 }

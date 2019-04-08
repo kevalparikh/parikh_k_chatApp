@@ -19,6 +19,15 @@ const server = app.listen(port, () =>{
   console.log(`app is running on port ${port}`);
 })
 
+// this is server side code to get all the online users 
+app.get('/onlineusers', function(request,response) {
+  //  console.log(io.socket.adapter.rooms);
+     response.send(io.sockets.adapter.rooms);
+    
+});
+
+
+
 // plug in the chat app package
 
 // switch for operator, listen incoming connection
@@ -27,6 +36,9 @@ io.attach(server);
 io.on('connection', function(socket){
    console.log('a user has connected'); 
     socket.emit('connected', {sID: `${socket.id}`, message: 'new connection'});
+    
+    // tell everyone that someone is connected
+    io.emit('user joined', socket.id)
     
     //listen for incoming messages and send them to everyone
     socket.on('chat message', function(msg){
@@ -39,6 +51,10 @@ io.on('connection', function(socket){
     
     socket.on('disconnect', function(){
        console.log('a user has disconnected'); 
+        
+            
+     // tell everyone that someone is disconnected
+     socket.broadcast.emit('user left', socket.id);
     });
 });
 
