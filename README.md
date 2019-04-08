@@ -4,10 +4,10 @@ This is a realtime chat application, Which is made by using Html, css, javascrip
 
 ## Installing
 
- cd project directory
- npm install
- npm start
- run localhost:3000 on browser
+* cd project directory
+* npm install
+* npm start
+* run localhost:3000 on browser
 
 
 ### Prerequisites
