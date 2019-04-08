@@ -13,6 +13,6 @@ ChatApp Project by Keval parikh
 - added new functionalities like it shows in numbers that how many users online.
 - added all users id show up on the left side.
 - added notification functionality when user joined and when user left.
-- edit textarea to the input box,so don't need to press submit button.
+- edit textarea to the input box, so don't need to press submit button.
 - added gulp sass to the project.
 - addeed axios.min.js file for ajax run to show online users
