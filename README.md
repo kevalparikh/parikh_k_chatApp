@@ -1,16 +1,14 @@
 # parikh_k_chatApp
 ChatApp Project by Keval parikh
 
-* To run the project :
+## To run the project :
 - cd project directory
 - npm install
 - npm start
 - run localhost:3000 on browser
 
 
-
-
-* my completed requirements for this project
+## my completed requirements for this project :
 - added new skin color and new fonts to the chat design.
 - added new functionalities like it shows in numbers that how many users online.
 - added all users id show up on the left side.
