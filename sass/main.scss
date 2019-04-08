@@ -13,18 +13,21 @@ main {
 	flex-direction: row;
 }
 .form-container, .messages { padding: 20px; }
-.form-container { 
-	flex: 1; 
-	border: 6px solid #bfcfd6;
-	background-color: #e3edf1;
 
-	label { display: block; margin-bottom: 0.5rem; }
+.form-container { 
+	flex: 0.7; 
+	background-color: #EEE8AA;
+
+	label { display: block; margin-bottom: 0.5rem; font-family: 'Courgette', cursive;
+
+ }
 }
 
 .messages { 
 	flex: 2;
-	background-color: #eee;
-	border: 6px solid #e2e0e0; 
+    background-color: beige;
+    //background: url(/images/white.jpg);
+	border: 6px solid white; 
 }
 
 input, textarea { 
@@ -52,6 +55,7 @@ form {
 		padding: 10px; 
 		background-color: rgb(75, 200, 17);
 		margin-top: 1rem; 
+        margin-left: 85px;
 		border-radius: 8px;
 		color: white;
 		cursor: pointer;
@@ -60,12 +64,35 @@ form {
 	}
 }
 
+.online{
+    text-align: center;
+    color: green;
+    font-family: 'Exo', sans-serif;
+    margin-bottom: 35px;
+
+}
+
+.onlineUserNames{
+    text-align: center;
+    list-style: none;
+}
+
+
 #messages {
 	list-style-type: none; margin: 0; padding: 0;
 
 	li { padding: 5px 10px;	}
 	li:nth-child(odd) { background: #eee; }
 }
+
+.info{
+    font-size: 15px;
+    font-style: italic;
+    margin: 15px;
+}
+
+
+
 
 // imports
 
