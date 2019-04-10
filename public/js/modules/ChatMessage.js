@@ -3,7 +3,7 @@ export default {
     
     template: `
       <p class="new-message" :class="{ 'my-message' : matchedID }">
-      <span>{{msg.message.name}} says:</span>
+      <span>{{msg.message.name}} :</span>
       {{msg.message.content}}
       </p>
     `,

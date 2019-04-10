@@ -11,7 +11,18 @@
 <body>
 
 	<main id="app">		
-	
+
+	<section class="messages">
+			<ul id="messages" v-for="message in messages">
+			<div v-if="message.type == 'info'" class="info">
+              {{ message.msg }}
+            </div>
+			<!-- render the message component here -->
+			<newMessage :msg="message">
+			</newMessage>
+				
+			</ul>
+		</section>		
 	
 		<section class="form-container">
         
@@ -23,29 +34,17 @@
            {{ user }}
          </li>    
             </ul>
-         
-			<label for="nickname">Your Name</label>
+        
 			<input v-model="nickname" type="text" id="nickname" class="nickname" placeholder="Type Your Name..">
 			
 			<form>
-				<label for="message">Type something</label>
 				<input v-model="message" type="text" id="nickname" class="message" placeholder="Type Your Name..">
 				<input type="submit" value="Send Message" @click.prevent="dispatchMessage">
 			</form>
 
 		</section>
 		
-		<section class="messages">
-			<ul id="messages" v-for="message in messages">
-			<div v-if="message.type == 'info'" class="info">
-              {{ message.msg }}
-            </div>
-			<!-- render the message component here -->
-			<newMessage :msg="message">
-			</newMessage>
-				
-			</ul>
-		</section>		
+		
 	
 	</main> 
 	<script src="/socket.io/socket.io.js"></script>
